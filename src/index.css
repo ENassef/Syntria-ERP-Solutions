@@ -1,0 +1,115 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@theme {
+    /* Color Palette */
+    --color-Dark-Blue: #0e1f51;
+    --color-Peach-Red: #ff3e54;
+    --color-Black-Shed: #252525;
+    --color-Off-White: #f7f7f7;
+    --color-main-white: #081717;
+
+    /* Font Family */
+    --font-primary: "Raleway", sans-serif;
+
+    /* Typography Scale */
+    --text-h1: 64px;
+    --text-h2: 40px;
+    --text-h3: 24px;
+    --text-subtitle: 24px;
+    --text-body: 16px;
+    --text-small: 14px;
+    --text-button: 10px;
+    --text-pretext: 10px;
+    --text-label: 10px;
+
+    /* Line Heights */
+    --leading-h1: 75px;
+    --leading-h2: 47px;
+    --leading-h3: 28px;
+    --leading-subtitle: 28px;
+    --leading-body: 19px;
+    --leading-small: 16px;
+    --leading-button: 12px;
+    --leading-pretext: 12px;
+    --leading-label: 12px;
+}
+
+/* Custom utility classes for your typography system (without colors) */
+@utility h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 64px;
+    line-height: 75px;
+}
+
+@utility h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 40px;
+    line-height: 47px;
+}
+
+@utility h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 24px;
+    line-height: 28px;
+}
+
+@utility subtitle {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 24px;
+    line-height: 28px;
+}
+
+@utility strong-bold {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 16px;
+    line-height: 19px;
+}
+
+@utility body-italic {
+    font-family: "Raleway", sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+@utility body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 16px;
+    line-height: 19px;
+}
+
+@utility small-copy {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 14px;
+    line-height: 16px;
+}
+
+@utility button-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600; /* Semibold */
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+@utility pretext {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600; /* Semibold */
+    font-size: 10px;
+    line-height: 12px;
+}
+
+@utility label {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 10px;
+    line-height: 12px;
+}
