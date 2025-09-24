@@ -42,7 +42,7 @@ export default function OurProcess() {
                     <p className="title-2">Our Process</p>
                 </div>
                 <div className="flex justify-center mt-10">
-                    <div className="flex-col md:flex-row flex gap-10 gap-y-8 w-3/4">
+                    <div className="flex-col md:flex-row flex gap-6 gap-y-8 w-5/6">
                         {processData.map((process, index) => (
                             <ProcessCard
                                 key={index}
