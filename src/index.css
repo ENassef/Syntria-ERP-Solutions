@@ -163,3 +163,13 @@ html {
 .title-2 {
     @apply text-Dark-Blue text-3xl md:text-4xl font-bold hover:cursor-text-hover;
 }
+
+@utility container {
+  margin : 0 auto ;
+}
+
+.active{
+  color: #ff3e54;
+  font-weight: bold;
+  border-bottom: #ff3e54 solid ;
+}
