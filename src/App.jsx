@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./Components/Layout/Layout";
+import Layout from "./Components/Layout";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Service from "./Pages/Service/Service";
