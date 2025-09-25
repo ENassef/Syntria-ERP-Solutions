@@ -1,5 +1,5 @@
 import React from "react";
-import people from "../../assets/images/aboutUs.png";
+import people from "../../assets/aboutUs.png";
 import { Headset } from "lucide-react";
 import person1 from '../../assets/OurLeader/our_leader_1.png'
 import person2 from '../../assets/OurLeader/our_leader_2.png'

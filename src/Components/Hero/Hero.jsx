@@ -34,8 +34,8 @@ export default function Hero() {
         <button
           type="button"
           className="bg-Peach-Red rounded-md px-6 py-3 text-white hover:bg-opacity-90 hover:cursor-hover focus:outline-none focus:ring-2 focus:ring-Peach-Red transition duration-300 w-fit"
-          aria-label="View more about our services"
-          onClick={() => (window.location.href = "/services")}
+          aria-label="View more about our service"
+          onClick={() => (window.location.href = "/service")}
         >
           View More
         </button>

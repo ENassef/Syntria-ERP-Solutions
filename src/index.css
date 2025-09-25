@@ -134,3 +134,6 @@
     line-height: 12px;
 }
 
+@utility customActive {
+    color: red;
+}
