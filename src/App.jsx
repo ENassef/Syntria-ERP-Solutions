@@ -1,15 +1,17 @@
-import { useEffect } from "react";
+import { useEffect, lazy, Suspense } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./Components/Layout";
-import Home from "./Pages/Home/Home";
-import About from "./Pages/About/About";
-import Service from "./Pages/Service/Service";
-import Portfolio from "./Pages/Portfolio/Portfolio";
-import Blogs from "./Pages/Blogs/Blogs";
-import Contact from "./Pages/Contact/Contact";
-import Error from "./Pages/Error/Error";
+import Layout from "./Components/Layout/Layout";
+
+// Lazy load route components
+const Home = lazy(() => import("./Pages/Home/Home"));
+const About = lazy(() => import("./Pages/About/About"));
+const Service = lazy(() => import("./Pages/Service/Service"));
+const Portfolio = lazy(() => import("./Pages/Portfolio/Portfolio"));
+const Blogs = lazy(() => import("./Pages/Blogs/Blogs"));
+const Contact = lazy(() => import("./Pages/Contact/Contact"));
+const Error = lazy(() => import("./Pages/Error/Error"));
 
 function App() {
     useEffect(() => {
@@ -63,9 +65,9 @@ function App() {
     ]);
 
     return (
-        <>
+        <Suspense fallback={<div>Loading...</div>}>
             <RouterProvider router={router} />
-        </>
+        </Suspense>
     );
 }
 
