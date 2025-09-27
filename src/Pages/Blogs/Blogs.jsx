@@ -181,7 +181,7 @@ export default function Blogs() {
                 through Video"
               </p>
               <div className="text-center mt-6">
-                <button className="bg-pink-500 text-white px-5 py-2 rounded-full font-medium shadow-sm">
+                <button className="bg-[#ff3e54] text-white px-5 py-2 rounded-2xl font-medium shadow-sm">
                   Get In Touch
                 </button>
               </div>
