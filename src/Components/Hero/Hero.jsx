@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import HeroImg from "../../assets/Hero.png";
 
 export default function Hero() {
