@@ -1,5 +1,5 @@
   import React from 'react'
-  import servicePhoto from "../../assets/OurWork/WhatWeDo.png"
+  import servicePhoto from "../../assets/WhatWeDo.png"
 
   export default function Service() {
     return (

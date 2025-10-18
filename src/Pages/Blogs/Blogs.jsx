@@ -169,7 +169,7 @@ export default function Blogs() {
           </div>
         </section>
 
-        {/* CTA Banner */}
+        {/* CTA Banner
         <section className="mt-14 mb-24">
           <div
             style={{ backgroundImage: `url('${bgImg}')` }}
@@ -187,7 +187,7 @@ export default function Blogs() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );
