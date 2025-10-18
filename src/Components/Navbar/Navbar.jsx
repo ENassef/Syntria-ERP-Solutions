@@ -1,26 +1,30 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import Logo from '../../assets/Logo/Logo.png'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex justify-between items-center p-3 bg-white">
+    <div className="flex justify-between items-center p-3 bg-white container mx-auto z-[100] relative">
       {/* Logo */}
       <div className="flex items-center">
-        <h1 className="font-bold text-xl text-Dark-Blue">Logoipsum</h1>
-      </div>
+  <Link to="/" onClick={() => setIsOpen(false)}>
+    <img src={Logo} alt="logo" className="w-auto h-36 cursor-pointer" />
+  </Link>
+</div>
+
 
       {/* Menu for large screens */}
-      <ul className="hidden md:flex space-x-6 items-center">
+      <ul className="hidden md:flex space-x-6 items-center font-bold">
         <li><NavLink to={"/about"}>About</NavLink></li>
         <li><NavLink to={"/service"}>Our Services</NavLink></li>
         <li><NavLink to={"/portfolio"}>Portfolio</NavLink></li>
         <li><NavLink to={"/blogs"}>Blog</NavLink></li>
         <li><NavLink to={"/contact"}>Contact</NavLink></li>
         <li className="bg-Peach-Red text-white px-4 py-2 rounded-md">
-          <Link to={""}>Get In Touch</Link>
+          <Link to={"/contact"}>Get In Touch</Link>
         </li>
       </ul>
 
